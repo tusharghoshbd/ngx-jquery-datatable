@@ -1,0 +1,13 @@
+{
+  "name": "ngx-jquery-datatable",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^8.1.3",
+    "@angular/core": "^8.1.3",
+    "datatables.net": "^1.10.20",
+    "script-loader": "^0.7.2",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "@tusharghoshbd/jq-plugins": "^1.0.0"
+  }
+}
