@@ -12,7 +12,7 @@ declare var $: any;
         <ng-content></ng-content>
     </table>
   `,
-  styles: ["../assets/js/jquery.dataTables.min.css"]
+  styleUrls: ['./ngx-jquery-datatable.component.scss']
 })
 export class NgxJqueryDatatableComponent implements OnInit {
 

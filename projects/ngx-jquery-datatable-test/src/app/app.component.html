@@ -1,48 +1,56 @@
 
     <div class="container" id="content">
-        <!-- <section class="sortable-grid" id="widgets-grid">  
-    <div class="row">
+        <section class="sortable-grid" id="widgets-grid">  
+        <div class="row" >
         <article class="col-sm-12">
          
   
-          <div  color="darken">
-            <header><span class="widget-icon"> <i class="fa fa-table"></i> </span>
-              <h2>Standard Data Tables</h2></header>
+          <div  color="darken" class="jarviswidget jarviswidget-sortable jarviswidget-color-darken">
+            <header>
+                <div class="jarviswidget-ctrls" role="menu" style="height: 30px;">   
+                    <button type="button" (click)="onClickAllData()" class="btn btn-primary" style="margin-top: -10px; border-radius: 0px;"> Load all data</button>
+                </div>
+                <span class="widget-icon"> 
+                    <i class="fa fa-table"></i> 
+                </span>
+                <h2>Data Tables</h2>
+               
+            </header>
             <div>
-              <div class="widget-body no-padding"> -->
+              <div class="widget-body no-padding">
                 <ngx-jquery-datatable 
                   [options]="option"
                   paginationLength="true" tableClass="table table-striped table-bordered table-hover"
                   width="100%">
                   <thead>
-                  <tr>
-                    <th data-hide="phone">ID</th>
-                    <th data-class="expand"><i
-                      class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i>
-                      Name
-                    </th>
-                    <th data-hide="phone"><i
-                      class="fa fa-fw fa-phone text-muted hidden-md hidden-sm hidden-xs"></i>
-                      Phone
-                    </th>
-                    <th>Company</th>
-                    <th data-hide="phone,tablet"><i
-                      class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i>
-                      Zip
-                    </th>
-                    <th data-hide="phone,tablet">City</th>
-                    <th data-hide="phone,tablet"><i
-                      class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i>
-                      Date
-                    </th>
-                  </tr>
+                    <tr>
+                        <th data-hide="phone">ID</th>
+                        <th data-class="expand"><i
+                        class="fa fa-fw fa-user text-muted hidden-md hidden-sm hidden-xs"></i>
+                        Name
+                        </th>
+                        <th data-hide="phone"><i
+                        class="fa fa-fw fa-phone text-muted hidden-md hidden-sm hidden-xs"></i>
+                        Phone
+                        </th>
+                        <th>Company</th>
+                        <th data-hide="phone,tablet"><i
+                        class="fa fa-fw fa-map-marker txt-color-blue hidden-md hidden-sm hidden-xs"></i>
+                        Zip
+                        </th>
+                        <th data-hide="phone,tablet">City</th>
+                        <th data-hide="phone,tablet"><i
+                        class="fa fa-fw fa-calendar txt-color-blue hidden-md hidden-sm hidden-xs"></i>
+                        Date
+                        </th>
+                    </tr>
                   </thead>
                 </ngx-jquery-datatable>
-              <!-- </div>
+              </div>
             </div>
           </div>
           </article>
           </div>
           </section>
-          </div> -->
+          </div>
 
