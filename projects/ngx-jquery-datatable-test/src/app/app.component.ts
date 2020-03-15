@@ -36,11 +36,6 @@ export class AppComponent {
         columns: [{ data: 'id' }, { data: 'name' }, { data: 'phone' }, { data: 'company' }, { data: 'zip' }, { data: 'city' }, { data: 'date' }]
       }
   
-      
-      // setTimeout(() => {
-      //   this.datatableComponent.render()
-      // }, 4000);
-  
     }
     onClickAllData(){
         this.option = {

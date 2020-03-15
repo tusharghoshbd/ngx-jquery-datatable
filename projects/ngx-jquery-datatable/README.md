@@ -1,24 +1,62 @@
 # NgxJqueryDatatable
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+**NgxJqueryDatatable** is an angular library for presenting large and complex data. This library make you easy to integrate jQuery Datatable in your angular component. This library supports all kind features of Datatable such as paging, ordering, search, scrolling and many more to a static HTML page.
 
-## Code scaffolding
+## Demo
+![](https://media.giphy.com/media/gFnYn9gI5rQBmNXqwl/giphy.gif)
 
-Run `ng generate component component-name --project ngx-jquery-datatable` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-jquery-datatable`.
-> Note: Don't forget to add `--project ngx-jquery-datatable` or else it will be added to the default project in your `angular.json` file. 
+ [Demo](https://stackblitz.com/edit/ngx-jquery-datatable?file=src/app/app.component.ts).
 
-## Build
+## Installation
+```angular
+npm i @tusharghoshbd/ngx-jquery-datatable
+```
 
-Run `ng build ngx-jquery-datatable` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Usage
 
-## Publishing
+#### App Module
+```angular
+import { NgxJqueryDatatableModule } from 'ngx-jquery-datatable';
 
-After building your library with `ng build ngx-jquery-datatable`, go to the dist folder `cd dist/ngx-jquery-datatable` and run `npm publish`.
+imports: [
+  NgxJqueryDatatableModule 
+],
+```
+#### Html file
+```angular
+<ngx-jquery-datatable 
+  [options]="option"
+  paginationLength="true" tableClass="table table-striped"
+  width="100%">
+  <thead>
+	<tr>
+		<th data-hide="phone">ID</th>
+		<th>Name</th>
+		<th>Phone</th>
+		<th>Company</th>
+	</tr>
+  </thead>
+</ngx-jquery-datatable>
+```
 
-## Running unit tests
+#### Ts file
+```angular
+option: any;
+constructor() { }
 
-Run `ng test ngx-jquery-datatable` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ngOnInit() {
+  this.option = {
+	colReorder: true,
+	data: [],
+	columns: []
+  }
+}
+```
 
-## Further help
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

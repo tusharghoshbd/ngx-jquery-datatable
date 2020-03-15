@@ -1,6 +1,25 @@
 {
-  "name": "ngx-jquery-datatable",
-  "version": "0.0.1",
+  "name": "@tusharghoshbd/ngx-jquery-datatable",
+  "version": "1.0.0",
+  "description": "Angular datatable component using jquery",
+  "main": "dist/ngx-jquery-datatable",
+  "author": "tusharghoshbd",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tusharghoshbd/ngx-jquery-datatable"
+  },
+  "keywords": [
+    "ng datatable",
+    "ng jquery datatable",
+    "Datatable",
+    "Grid",
+    "Angular",
+    "jquery datagrid",
+    "jquery datatable",
+    "data grid",
+    "angular datatable"
+  ],
   "peerDependencies": {
     "@angular/common": "^8.1.3",
     "@angular/core": "^8.1.3",
