@@ -5,23 +5,24 @@
 ## Demo
 ![](https://media.giphy.com/media/gFnYn9gI5rQBmNXqwl/giphy.gif)
 
- [Demo](https://stackblitz.com/edit/ngx-jquery-datatable?file=src/app/app.component.ts).
+ ## [Demo](https://stackblitz.com/edit/ngx-jquery-datatable?file=src/app/app.component.ts)
 
 ## Installation
+
+As a prerequisite, you need [jQuery](https://code.jquery.com) library.
+
 ```angular
+npm i @tusharghoshbd/jq-plugins
+
 npm i @tusharghoshbd/ngx-jquery-datatable
 ```
+Add datatable script in index.html page just after the jQuery library. you can see the [demo](https://stackblitz.com/edit/ngx-jquery-datatable?file=src/app/app.component.ts).
+
+```<script src="node_modules/@tusharghoshbd/jq-plugins/Datatables/datatables.min.js"></script>```
+
 
 ## Usage
 
-#### App Module
-```angular
-import { NgxJqueryDatatableModule } from 'ngx-jquery-datatable';
-
-imports: [
-  NgxJqueryDatatableModule 
-],
-```
 #### Html file
 ```angular
 <ngx-jquery-datatable 
@@ -33,7 +34,6 @@ imports: [
 		<th data-hide="phone">ID</th>
 		<th>Name</th>
 		<th>Phone</th>
-		<th>Company</th>
 	</tr>
   </thead>
 </ngx-jquery-datatable>
@@ -41,15 +41,10 @@ imports: [
 
 #### Ts file
 ```angular
-option: any;
-constructor() { }
-
-ngOnInit() {
-  this.option = {
-	colReorder: true,
-	data: [],
-	columns: []
-  }
+option:any = {
+  colReorder: true,
+  data: [{ "id": "1", "name": "Brendan","phone": "1-724-406-2487"}],
+  columns: [{ data: 'id' }, { data: 'name' }, { data: 'phone' }]
 }
 ```
 

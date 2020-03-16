@@ -1,6 +1,6 @@
 {
   "name": "@tusharghoshbd/ngx-jquery-datatable",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Angular datatable component using jquery",
   "main": "dist/ngx-jquery-datatable",
   "author": "tusharghoshbd",
